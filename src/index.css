@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Graphik;
+  src: url(./Graphik/graphiklcweb_medium.ttf);
+}
+
+body {
+  height: 200vh;  
+  font-family: Graphik;
+  max-width: 1728px;
+  container-type: inline-size;
+}

@@ -1,0 +1,169 @@
+.HeaderBanner {
+  display: flex;
+  margin-top: 54px;
+  height: 54px;
+  background-color: black;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.HeaderBanner img {
+  width: 212px;
+  height: 54px;
+  margin-left: 0.5rem;
+}
+
+.cupon {
+  display: flex;
+  color: white;
+  font-size: 1rem;
+}
+
+.discount {
+  margin: 0 1.5rem;
+  color: #d7a830;
+  font-weight: 600;
+}
+
+.rightEl {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 1rem;
+}
+.ShopButton {
+  border-radius: 100px;
+  background-color: white;
+  display: flex;
+  width: 115px;
+  height: 38px;
+  align-items: center;
+  justify-content: center;
+}
+
+.shopNow {
+  display: block;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.cuponCard {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  right: 34px;
+  width: 600px;
+  height: 349px;
+  border-radius: 16px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out; /* Adjust the duration and timing function as needed */
+}
+
+.smooth-appear-visible {
+  opacity: 1;
+}
+
+.cuponCard img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+}
+
+.textInfo {
+  position: absolute;
+  left: 50%;
+  color: white;
+  text-align: center;
+}
+
+.textInfo > .BlackFriday {
+  margin-top: 75px;
+  font-weight: 500;
+  font-size: 2.75rem;
+}
+
+.textInfo > .discount {
+  margin-top: 25px;
+  font-weight: 500;
+  font-size: 2.5rem;
+  color: rgb(230, 210, 98);
+}
+
+.textInfo > .usageDate {
+  margin-top: 14px;
+  color: #6c6c70;
+}
+
+.textInfo > .ShopNowWrap {
+  margin-top: 40px;
+  background-color: rgb(27, 29, 27);
+  border-radius: 14px;
+  padding: 0.75rem 2rem;
+}
+
+.textInfo > .ShopNowText {
+  font-weight: 500;
+}
+
+.closeIcon {
+  display: block;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+
+@container (max-width:767px) {
+  .HeaderBanner img {
+    margin: 0;  
+    
+  }
+  .discount
+  {
+    margin-left: 1rem;
+  }
+  .PeriodOfBlackFriday,
+  .HeaderBanner .usageDate,
+  .headerCloseButton,
+  .ShopButton  
+  {
+    display: none;
+  } 
+  .cuponCard {
+    right: 0px;
+  }
+}
+
+@container ((min-width: 768px) AND (max-width: 1024px)) {
+  .HeaderBanner img {
+    margin-left: 0;
+   
+  }
+  .PeriodOfBlackFriday,
+  .atCheckOut,
+  .headerCloseButton,
+  .headerMenuButton
+   {
+    display: none;
+  }  
+  .cuponCard {
+    right: 17px;
+  }
+}
+
+
+@container (min-width: 1024px) {
+  .PeriodOfBlackFriday,
+  .atCheckOut {
+    display: initial;
+  }
+  .headerMenuButton
+  {
+    display: none;
+  }
+
+  .headerCloseButton {
+    display: inline;
+    margin-left: 1rem;
+  }
+}
